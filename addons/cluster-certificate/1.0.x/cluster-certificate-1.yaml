@@ -1,0 +1,20 @@
+---
+apiVersion: kubeaddons.mesosphere.io/v1beta1
+kind: ClusterAddon
+metadata:
+  name: cluster-certificate
+  annotations:
+    catalog.kubeaddons.mesosphere.io/addon-revision: "1.0.0"
+    values.chart.helm.kubeaddons.mesosphere.io/cluster-certificate: "https://raw.githubusercontent.com/cmays20/cluster-certificate/master/values.yaml"
+spec:
+  namespace: kubeaddons
+  kubernetes: 
+    minSupportedVersion: v1.15.6
+  requires:
+    - matchLabels:
+        kubeaddons.mesosphere.io/name: cert-manager
+  chartReference:
+    chart: cluster-certificate
+    repo: https://github.com/cmays20/cluster-certificate
+    version: 1.0.0
+    
