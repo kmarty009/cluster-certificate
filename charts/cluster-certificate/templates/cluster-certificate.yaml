@@ -8,4 +8,4 @@ spec:
   issuerRef:
     kind: ClusterIssuer
     name: letsencrypt
-  commonName: {{ .commonName }}
+  commonName: {{ required "you must specify a commonName" .Values.commonName }}
