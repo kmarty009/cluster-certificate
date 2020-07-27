@@ -15,6 +15,6 @@ spec:
         kubeaddons.mesosphere.io/name: cert-manager
   chartReference:
     chart: cluster-certificate
-    repo: https://github.com/cmays20/cluster-certificate/charts
+    repo: https://cmays20.github.io/cluster-certificate/charts
     version: 1.0.0
     
