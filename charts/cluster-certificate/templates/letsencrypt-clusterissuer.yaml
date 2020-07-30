@@ -8,7 +8,7 @@ spec:
     # Let's Encrypt will use this to contact you about expiring
     # certificates, and issues related to your account.
     email: {{ required "you must specify an email address" .Values.email }}
-    server: https://acme-v02.api.letsencrypt.org/directory
+    server: {{ default "https://acme-v02.api.letsencrypt.org/directory" .Values.letsencryptServer }}
     privateKeySecretRef:
       # Secret resource that will be used to store the account's private key.
       name: letsencrypt-private-key
