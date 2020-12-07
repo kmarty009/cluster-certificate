@@ -1,10 +1,10 @@
 apiVersion: v1
-appVersion: "1.0.0"
+appVersion: "1.0.2"
 description: Installs cluster-certificate Kubernetes cluster
 name: cluster-certificate
-version: "1.0.0"
+version: "1.0.2"
 tillerVersion: ">=2.14.2"
-home: https://github.com/cmays20/cluster-certificate
+home: https://github.com/kmarty009/cluster-certificate
 maintainers:
-- email: cmays@d2iq.com
-  name: cmays
+- email: kmarty@d2iq.com
+  name: kmarty

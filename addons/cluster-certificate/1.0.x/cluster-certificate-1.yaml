@@ -4,7 +4,7 @@ kind: ClusterAddon
 metadata:
   name: cluster-certificate
   annotations:
-    catalog.kubeaddons.mesosphere.io/addon-revision: "1.0.0"
+    catalog.kubeaddons.mesosphere.io/addon-revision: "1.0.2"
     values.chart.helm.kubeaddons.mesosphere.io/cluster-certificate: "https://raw.githubusercontent.com/kmarty009/cluster-certificate/master/charts/cluster-certificate/values.yaml"
 spec:
   namespace: kubeaddons
@@ -16,5 +16,5 @@ spec:
   chartReference:
     chart: cluster-certificate
     repo: https://kmarty009.github.io/cluster-certificate
-    version: 1.0.0
+    version: 1.0.2
     
