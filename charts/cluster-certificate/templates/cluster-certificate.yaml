@@ -9,3 +9,4 @@ spec:
     kind: ClusterIssuer
     name: letsencrypt
   commonName: {{ required "you must specify a commonName" .Values.commonName }}
+  dnsNames: {{ .Values.dnsNames }}
