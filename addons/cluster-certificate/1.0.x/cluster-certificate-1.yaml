@@ -5,7 +5,7 @@ metadata:
   name: cluster-certificate
   annotations:
     catalog.kubeaddons.mesosphere.io/addon-revision: "1.0.0"
-    values.chart.helm.kubeaddons.mesosphere.io/cluster-certificate: "https://raw.githubusercontent.com/cmays20/cluster-certificate/master/charts/cluster-certificate/values.yaml"
+    values.chart.helm.kubeaddons.mesosphere.io/cluster-certificate: "https://raw.githubusercontent.com/kmarty009/cluster-certificate/master/charts/cluster-certificate/values.yaml"
 spec:
   namespace: kubeaddons
   kubernetes: 
@@ -15,6 +15,6 @@ spec:
         kubeaddons.mesosphere.io/name: cert-manager
   chartReference:
     chart: cluster-certificate
-    repo: https://cmays20.github.io/cluster-certificate
+    repo: https://kmarty009.github.io/cluster-certificate
     version: 1.0.0
     
